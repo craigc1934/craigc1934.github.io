@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title id="title"></title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<h1>Not Found</h1>
+<p id="error-content"></p>
+<hr>
+<address id="address"></address>
+</body>
+  <footer>
+    <script>
+      document.getElementById('title').innerHTML = window.location['host'] + " - Error 404";
+      document.getElementById('error-content').innerHTML = "The requested URL <i>" + window.location['href'] + "</i> was not found on this server.";
+      document.getElementById('address').innerHTML = "Apache/2.4.41 (Ubuntu) Server at " + window.location['host'] + " Port 443"
+    </script>
+  </footer>
+</html>
